@@ -1,11 +1,27 @@
 import { Button, Box, Text } from "@chakra-ui/react"
-import { useEthers, useEtherBalance } from "@usedapp/core"
+import { useEthers, useEtherBalance, ChainId } from "@usedapp/core"
 import { formatEther } from "@ethersproject/units"
 import Identicon from "./Indenticon"
+import { useEffect } from "react"
+import { toast } from "react-toastify"
 
 export default function ConnectButton() {
-  const { activateBrowserWallet, account } = useEthers()
+  const { activateBrowserWallet, account, error } = useEthers()
   const etherBalance = useEtherBalance(account)
+
+  useEffect(() => {
+    if (error) {
+      if (error.message.includes("Unsupported chain id")) {
+        let message = "Please use Ropsten Network"
+        if (process.env.NEXT_PUBLIC_CHAIN == ChainId.Mainnet) {
+          message = "Please use Mainnet Network"
+        }
+        toast.error(message)
+      } else {
+        toast.error(error.message)
+      }
+    }
+  }, [error])
 
   function handleConnectWallet() {
     activateBrowserWallet()
