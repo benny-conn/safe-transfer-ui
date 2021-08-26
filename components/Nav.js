@@ -4,7 +4,7 @@ import ConnectButton from "./ConnectButton"
 
 const Nav = () => {
   return (
-    <Box w="100%" padding="5" position="absolute" top={0}>
+    <Box w="100%" p="4" position="relative" top={0}>
       <HStack justify="space-between">
         <Text fontSize="lg">
           Safe Transfer{" "}

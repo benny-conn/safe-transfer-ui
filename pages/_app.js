@@ -5,7 +5,6 @@ import StateProvider from "../interact/index"
 import { ToastContainer } from "react-toastify"
 import { ChakraProvider } from "@chakra-ui/react"
 import { DAppProvider, ChainId } from "@usedapp/core"
-import Layout from "../components/Layout"
 
 const config = {
   readOnlyChainId:
@@ -23,9 +22,7 @@ function App({ Component, pageProps }) {
     <DAppProvider config={config}>
       <StateProvider>
         <ChakraProvider>
-          <Layout>
-            <Component {...pageProps} />
-          </Layout>
+          <Component {...pageProps} />
           <ToastContainer
             position="bottom-right"
             autoClose={5000}
