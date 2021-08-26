@@ -28,8 +28,11 @@ export default function Home() {
   return (
     <Box w="100%" pb="10" position="absolute" minH="100vh">
       <Head>
-        <title>Simple Send</title>
-        <meta name="description" content="Send ETH or NFTs safely and simply" />
+        <title>Safe Transfer</title>
+        <meta
+          name="description"
+          content="Send ETH and NFTs safely and securely"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Nav />

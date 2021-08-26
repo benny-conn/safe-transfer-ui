@@ -7,7 +7,7 @@ const Nav = () => {
     <Box w="100%" p="4" position="relative" top={0}>
       <HStack justify="space-between">
         <Text fontSize="lg">
-          SimpleSend{" "}
+          SafeTransfer{" "}
           <Text fontSize="sm" as={"span"} color="gray.400">
             by bennycio
           </Text>
