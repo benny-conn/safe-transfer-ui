@@ -4,12 +4,23 @@ import "react-toastify/dist/ReactToastify.css"
 import StateProvider from "../interact/index"
 import { ToastContainer } from "react-toastify"
 import { ChakraProvider } from "@chakra-ui/react"
-import { DAppProvider } from "@usedapp/core"
+import { DAppProvider, ChainId } from "@usedapp/core"
 import Layout from "../components/Layout"
+
+const config = {
+  readOnlyChainId:
+    process.env.NEXT_PUBLIC_CHAIN == ChainId.Mainnet
+      ? ChainId.Mainnet
+      : ChainId.Ropsten,
+  supportedChains:
+    process.env.NEXT_PUBLIC_CHAIN == ChainId.Mainnet
+      ? [ChainId.Mainnet]
+      : [ChainId.Ropsten],
+}
 
 function App({ Component, pageProps }) {
   return (
-    <DAppProvider>
+    <DAppProvider config={config}>
       <StateProvider>
         <ChakraProvider>
           <Layout>
