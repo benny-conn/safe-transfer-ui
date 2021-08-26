@@ -60,6 +60,10 @@ export const TransferETH = () => {
               color: "gray.500",
             }}
           />
+          <Text fontSize="0.7em" fontStyle="italic">
+            Remember this phrase and send it to whoever you are sending funds
+            to! They will need it!
+          </Text>
           <Input
             value={secret}
             onChange={e => setSecret(e.target.value)}
