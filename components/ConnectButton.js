@@ -31,25 +31,25 @@ export default function ConnectButton() {
     <Box
       display="flex"
       alignItems="center"
-      background="gray.400"
+      background="white"
       borderRadius="xl"
       py="0">
       <Box px="3">
-        <Text color="white" fontSize="md">
+        <Text color="black" fontSize="md">
           {etherBalance && parseFloat(formatEther(etherBalance)).toFixed(3)} ETH
         </Text>
       </Box>
       <Button
-        bgGradient="linear(to-r, pink.400,purple.400)"
+        bgGradient="linear(to-r, purple.400,pink.400)"
         borderRadius="xl"
         m="1px"
         px={3}
         height="38px"
         _hover={{
-          bgGradient: "linear(to-r, pink.500,purple.500)",
+          bgGradient: "linear(to-r, purple.500,pink.500)",
         }}
         _active={{
-          bgGradient: "linear(to-r, pink.300,purple.300)",
+          bgGradient: "linear(to-r, purple.300,pink.300)",
         }}>
         <Text color="white" fontSize="md" fontWeight="medium" mr="2">
           {account &&

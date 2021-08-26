@@ -26,7 +26,7 @@ export const TransferNFT = () => {
           Transfer{" "}
           <Text
             as={"span"}
-            bgGradient="linear(to-r, red.400,pink.400)"
+            bgGradient="linear(to-r, purple.400,pink.400)"
             bgClip="text">
             NFT
           </Text>
@@ -90,10 +90,9 @@ export const TransferNFT = () => {
             fontFamily={"heading"}
             mt={8}
             w={"full"}
-            bgGradient="linear(to-r, pink.400,purple.400)"
+            background="pink.400"
             color={"white"}
             _hover={{
-              bgGradient: "linear(to-r, pink.400,purple.400)",
               boxShadow: "xl",
             }}>
             Send NFT
@@ -126,7 +125,7 @@ export const ReceieveNFT = () => {
           Receive{" "}
           <Text
             as={"span"}
-            bgGradient="linear(to-r, red.400,pink.400)"
+            bgGradient="linear(to-r, purple.400,pink.400)"
             bgClip="text">
             NFT
           </Text>
@@ -167,10 +166,9 @@ export const ReceieveNFT = () => {
             fontFamily={"heading"}
             mt={8}
             w={"full"}
-            bgGradient="linear(to-r, pink.400,purple.400)"
+            background="pink.400"
             color={"white"}
             _hover={{
-              bgGradient: "linear(to-r, pink.400,purple.400)",
               boxShadow: "xl",
             }}>
             Receive NFT
@@ -202,7 +200,7 @@ export const PullNFT = () => {
           Pull Transfer of{" "}
           <Text
             as={"span"}
-            bgGradient="linear(to-r, red.400,pink.400)"
+            bgGradient="linear(to-r, purple.400,pink.400)"
             bgClip="text">
             NFT
           </Text>
@@ -231,10 +229,9 @@ export const PullNFT = () => {
             fontFamily={"heading"}
             mt={8}
             w={"full"}
-            bgGradient="linear(to-r, pink.400,purple.400)"
+            background="pink.400"
             color={"white"}
             _hover={{
-              bgGradient: "linear(to-r, pink.400,purple.400)",
               boxShadow: "xl",
             }}>
             Cancel Transfer
