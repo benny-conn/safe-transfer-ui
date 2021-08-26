@@ -28,7 +28,13 @@ export default function ConnectButton() {
         borderRadius="xl"
         m="1px"
         px={3}
-        height="38px">
+        height="38px"
+        _hover={{
+          bgGradient: "linear(to-r, pink.500,purple.500)",
+        }}
+        _active={{
+          bgGradient: "linear(to-r, pink.300,purple.300)",
+        }}>
         <Text color="white" fontSize="md" fontWeight="medium" mr="2">
           {account &&
             `${account.slice(0, 6)}...${account.slice(

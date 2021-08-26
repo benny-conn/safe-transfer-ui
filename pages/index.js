@@ -81,7 +81,7 @@ const Actions = ({ current }) => {
 
 const Options = ({ current, setCurrent }) => {
   return (
-    <HStack w="80%" spacing={24} p={8} position="relative" top={2}>
+    <HStack w="50%" spacing={10} p={8} position="relative" top={2}>
       <Button
         w="100%"
         onClick={() => setCurrent(TRANSFER)}
