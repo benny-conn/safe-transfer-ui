@@ -73,7 +73,7 @@ export const TransferNFT = () => {
             }}
           />
           <Text fontSize="0.7em" fontStyle="italic">
-            Remember or write down this phrase and send it to whoever you are
+            Remember or write down this phrase and send it to whomever you are
             sending funds to! They will need it!
           </Text>
           <Input

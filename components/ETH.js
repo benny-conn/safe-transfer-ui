@@ -61,8 +61,8 @@ export const TransferETH = () => {
             }}
           />
           <Text fontSize="0.7em" fontStyle="italic">
-            Remember this phrase and send it to whoever you are sending funds
-            to! They will need it!
+            Remember or write down this phrase and send it to whomever you are
+            sending funds to! They will need it!
           </Text>
           <Input
             value={secret}
